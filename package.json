@@ -1,0 +1,72 @@
+{
+  "name": "react-easy-credit-card",
+  "version": "1.0.1",
+  "private": false,
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "main": "dist/CreditCard.js",
+  "module": "dist/CreditCard.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshaneEdiri/react-easy-credit-card.git"
+  },
+  "keywords": [
+    "react",
+    "credit card", "easy credit card form", "credit card submit"
+  ],
+  "author": "Ashane Ediri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshaneEdiri/react-easy-credit-card/issues"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
+    "react-credit-card-input": "^1.1.5",
+    "react-credit-cards": "^0.8.3",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.1",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist && babel ./src/components -d dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/preset-react": "^7.14.5"
+  }
+}
