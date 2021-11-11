@@ -1,5 +1,5 @@
-# react easy credit card
-This is a test npm package to ease out credit card submission forms
+# React Easy Credit Card
+This is a npm package to ease out the complexities in credit card submission forms inside reactjs applications.
 
 ### Installation
 Run the following command to install this package.
@@ -10,13 +10,13 @@ npm install react-easy-credit-card
 
 To import the library.
 ```bash
- import ImageCard from "react-easy-credit-card";
+ import CreditCard from "react-easy-credit-card";
 ```
 
 The library could be used as follows inside a react component
 ```bash
 /*# Write your own function like this when you want to do some processing with the submitted data */
-const myhandlefunction = (submittedCardObject) => {
+const myHandlerFunction = (submittedCardObject) => {
 
   console.log(submittedCardObject)
   //# prints {cardnumber: 'xxxx xxxx xxxx xxx', expiry: 'mm/yy', cvc: 'xxx', cardname: 'XXXXXX XXXXXXXXXXXXXX'}
@@ -25,7 +25,7 @@ const myhandlefunction = (submittedCardObject) => {
   //# prints xxxx xxxx xxxx xxx
 };
 
-/*## The function which uses the library */
+/*## The function which uses the imported npm library */
 function CreditCardTest() {
   return (
     <div className="image-card-test-page-main">
@@ -40,6 +40,7 @@ function CreditCardTest() {
 ## Want to play with code ?
 
 1. Clone the repository
+2. 'npm install' to install all the dependencies 
 2. 'npm start' to start on local environment 
 3. Open your browser and navigate to 'http://localhost:3000/creditcard'
 
