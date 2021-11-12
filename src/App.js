@@ -1,3 +1,9 @@
+/**
+ * The landing page
+ *
+ * @version 1.0.0
+ * @author ashane2e
+ */
 import "./App.css";
 
 function App() {

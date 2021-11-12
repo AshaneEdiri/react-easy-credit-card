@@ -1,3 +1,10 @@
+
+/**
+ * Index file
+ *
+ * @version 1.0.0
+ * @author ashane2e
+ */
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
