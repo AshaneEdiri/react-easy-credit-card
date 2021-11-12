@@ -1,6 +1,6 @@
 {
   "name": "react-easy-credit-card",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "babel": {
     "presets": [
@@ -19,9 +19,13 @@
   },
   "keywords": [
     "react",
-    "credit card",
-    "easy credit card form",
-    "credit card submit"
+    "react-easy-credit-card",
+    "credit",
+    "card",
+    "reactEasyCreditCard",
+    "reactCreditCard",
+    "easyCreditCardForm",
+    "creditCardSubmit"
   ],
   "author": "Ashane Ediri",
   "license": "ISC",
