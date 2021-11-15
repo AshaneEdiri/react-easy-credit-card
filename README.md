@@ -21,24 +21,28 @@ To import the library.
 The library could be used as follows inside a react component
 
 ```bash
-/*# Write your own function like this when you want to do some processing with the submitted data */
+## Write your own function like this when you want to do some processing with the submitted data
 const myHandlerFunction = (submittedCardObject) => {
 
   console.log(submittedCardObject)
-  //# prints {cardnumber: 'xxxx xxxx xxxx xxx', expiry: 'mm/yy', cvc: 'xxx', cardname: 'XXXXXX XXXXXXXXXXXXXX'}
-
+  # prints {cardnumber: 'xxxx xxxx xxxx xxx', expiry: 'mm/yy', cvc: 'xxx', cardname: 'XXXXXX XXXXXXXXXXXXXX'}
   console.log(submittedCardObject.cardnumber)
-  //# prints xxxx xxxx xxxx xxx
+  # prints xxxx xxxx xxxx xxx
 };
 
-/*## The function which uses the imported npm library */
+## The function which uses the imported npm library
 function CreditCardTest() {
   return (
-    <div className="image-card-test-page-main">
+    <div className="credit-card-test-page-main">
       <CreditCard
         submitbuttontext="Submit card"
         onsubmitfunc={myHandlerFunction}
-        expiryMinMonth="2021-10" />
+        expiryMinMonth="2021-10"                 # not mandatory, the minimum month which can be entered
+        cardNumberLabel="Card Number"            # not mandatory
+        expLabel="Month Of Expiry"               # not mandatory
+        cvcLabel="CVC"                           # not mandatory
+        cardNameLabel="Card Holder Name"         # not mandatory
+      />
     </div>
   );
 }
@@ -64,5 +68,9 @@ function CreditCardTest() {
 ### 3. The output of v1.0.x when entering cvc
 
 ![v1.0.x cvc output](./public/cvv_output.PNG)
+
+### 4. The improved output of v2.0.x 
+
+![v2.0.x output](./public/output_v2.PNG)
 
 #### Make sure to download the latest release version to experience the advanced features

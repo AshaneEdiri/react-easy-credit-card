@@ -1,7 +1,7 @@
 /**
  * The credit card test component
  *
- * @version 1.0.0
+ * @version 2.0.0
  * @author ashane2e
  */
 import CreditCard from "../components/CreditCard";
@@ -23,7 +23,15 @@ const myHandlerFunction = (submittedCardObject) => {
 function CreditCardTest() {
   return (
     <div className="credit-card-test-page-main">
-      <CreditCard submitbuttontext="Submit card" onsubmitfunc={myHandlerFunction} expiryMinMonth="2021-10" />
+      <CreditCard
+        submitbuttontext="Submit card"
+        onsubmitfunc={myHandlerFunction}
+        expiryMinMonth="2021-10"                 //not mandatory, the minimum month which can be entered
+        cardNumberLabel="Card Number"            //not mandatory
+        expLabel="Month Of Expiry"               //not mandatory
+        cvcLabel="CVC"                           //not mandatory
+        cardNameLabel="Card Holder Name"         //not mandatory
+      />
     </div>
   );
 }
